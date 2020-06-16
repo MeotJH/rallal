@@ -1,35 +1,116 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+    h1{
+      text-align: center;
+      margin-top: 230px;
+      font-size: 90px
+    }
+    h1 span:nth-child(1) {
+      color:#4285f4;
+    }
+    h1 span:nth-child(2){
+      color:#ea4335;
+    }
+    h1 span:nth-child(3){
+      color:#fbbc05;
+    }
+    h1 span:nth-child(4){
+      color: #4285f4;
+    }
+    h1 span:nth-child(5){
+      color:#34a853;
+    }
+    h1 span:nth-child(6){
+      color:#ea4335;
+    }
+    .input-group{
+      width:600px;
+      margin-left:429px;
+      margin-top:30px
+    }
 
-<head>
-<title> 나 배고파</title>
-<meta charset="utf-8">
-</head>
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        background: #07051a;
+    }
 
-<body>
-  <h1><a href="1.html">삶의 의미</a></h1>
-<ol>
-  <li><a href="1.html">치킨</a></li>
-  <li><a href="2.html"style="color:red; text-decoration: underline;" >피자</a></li>
-  <li><a href="3.html">삼겹살</a></li>
-</ol>
-<strong><a href="https://1boon.kakao.com/interbiz/5cb7e0c3ed94d20001c275dd" target="blank" title="치느님">치킨</a></strong>
- <style>
-  a{color:black;
-  text-decoration: none;}
-  h1{
-  font-size: 60px;
-  text-align: center;
-  }
- </style>
- : 토막난 닭고기에 양념을 한 뒤 밀가루나 전분 등을 묻히고 끓는 기름에 튀긴 요리이다.
- 현재는 조각내지 않고 튀기거나, 기름에 튀기지 않는 방식의 요리도 치킨이라 불리고 있으며 그 외 다양한 변형들이 만들어지고 있다.
- 즉, 프라이드 치킨의 줄임말로 시작했지만 튀김 방식이 아닌 새로운 닭요리를 통칭하는 용어로 사용되고 있다. 때문에 치킨과 통닭을 같은 뜻으로 사용하는 사람도 많아졌다.
- 강냉이와 옥수수를 같은 뜻으로 이해하는 것과 비슷하다. 한국에 들어와서 의미가 변형되었으며, 영단어 chicken의 원뜻은 (요리로서가 아닌 살아있는 동물 그 자체도 의미하는) '닭'.
-<p></p><img src="치킨.jpg" width="300">
-<p style=margin-top:30px;"><strong>피자</strong> : 두번째로 맛있는 음식이다
-<P></p>
-<img src="피자.jpg" width="300">
-<p style=margin-top:30px;">
-</body>
+    form{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 1s;
+        width: 50px;
+        height: 50px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+    }
+
+    input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    .fa{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;
+    }
+
+    form:hover{
+        width: 200px;
+        cursor: pointer;
+    }
+
+    form:hover input{
+        display: block;
+    }
+
+    form:hover .fa{
+        background: #07051a;
+        color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span>j</span><span>i</span><span>n</span><span>g</span><span>l</span><span>e</span>
+    </h1>
+      <form action="https://www.google.com/search" meohod="get"><!--  this code lisensed by codepen username Menelaos   -->
+      </body>
+      <input name="q" type="search">
+      <i class="fa fa-search"></i>
+    </form>
+  </body>
 </html>
